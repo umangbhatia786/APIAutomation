@@ -1,0 +1,8 @@
+1st command
+
+behave features/BookAPI.feature --no-capture --tags=regression -f allure_behave.formatter:AllureFormat
+ter -o AllureReports
+
+2nd Command
+
+allure serve C:\Users\Umang Bhatia\Documents\Udemy\BackEndAutomation\AllureReports
