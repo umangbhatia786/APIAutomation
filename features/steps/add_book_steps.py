@@ -22,11 +22,11 @@ def step_impl(context):
     )
 
 
-@then(u'Book is added successfully')
-def step_impl(context):
+@then(u'Book is added successfully with status code as {test_status_code:d}')
+def step_impl(context, test_status_code):
     res_json = context.add_book_res.json()
     '''print(context.add_book_res.status_code)
     print(context.add_book_res.text)'''
     context.book_id = res_json['ID']
-    assert context.add_book_res.status_code == 200, 'Status Code is not 200'
+    assert context.add_book_res.status_code == test_status_code, 'Status Code is not 200'
     assert res_json['Msg'] == 'successfully added', 'Add Book Message is not same as expected'

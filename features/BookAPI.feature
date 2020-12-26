@@ -5,8 +5,10 @@ Feature: Verify that Books can be added and deleted using the Library API
   Scenario Outline: Verify AddBook API Functionality
     Given The book details with <book_name>, <isbn> and author as <author>
     When We execute the AddBook API method
-    Then Book is added successfully
+    Then Book is added successfully with Status Code as 200
     Examples:
       | book_name      | isbn  | author      |
       | Casual Vacancy | OIUOW | J.K Rowling |
       | Art of War     | WEWEQ | Mao Zedong  |
+
+
