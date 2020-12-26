@@ -5,12 +5,12 @@ from utilities.resources import ApiResources
 import requests
 
 
-@given(u'The book details which need to be added to the library')
-def step_impl(context):
+@given(u'The book details with {book_name}, {isbn} and author as {author}')
+def step_impl(context, book_name, isbn, author):
     context.my_config = get_config()
     context.api_url = f'{context.my_config["API"]["endpoint"]}{ApiResources.add_book}'
     context.api_headers = {'Content-Type': 'application/json'}
-    context.input_json = add_book_payload('MyPain', 'IUDTYC', 'Clark Kent')
+    context.input_json = add_book_payload(book_name, isbn, author)
 
 
 @when(u'We execute the AddBook API method')

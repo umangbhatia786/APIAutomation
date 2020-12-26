@@ -1,5 +1,6 @@
 from utilities.configuration import get_query
 
+
 def add_book_payload(book_name, isbn, author):
     input_json = {
         "name": book_name,
