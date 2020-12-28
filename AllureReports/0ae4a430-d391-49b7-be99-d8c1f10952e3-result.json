@@ -1,0 +1,65 @@
+{
+  "name": "Verify AddBook API Functionality -- @1.1 ",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Given The book details with Casual Vacancy, OIUOW and author as J.K Rowling",
+      "status": "passed",
+      "start": 1608978882452,
+      "stop": 1608978882455
+    },
+    {
+      "name": "When We execute the AddBook API method",
+      "status": "passed",
+      "start": 1608978882455,
+      "stop": 1608978882602
+    },
+    {
+      "name": "Then Book is added successfully with Status Code as 200",
+      "status": "passed",
+      "start": 1608978882604,
+      "stop": 1608978882605
+    }
+  ],
+  "parameters": [
+    {
+      "name": "book_name",
+      "value": "Casual Vacancy"
+    },
+    {
+      "name": "isbn",
+      "value": "OIUOW"
+    },
+    {
+      "name": "author",
+      "value": "J.K Rowling"
+    }
+  ],
+  "start": 1608978882448,
+  "stop": 1608978882722,
+  "uuid": "625c2cdd-a69e-464f-8e3d-b41ec4ae9366",
+  "historyId": "c7c0880100505f18ad4cef8b53428ce6",
+  "fullName": "features/BookAPI.feature:Verify AddBook API Functionality",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "feature",
+      "value": "Verify that Books can be added and deleted using the Library API"
+    },
+    {
+      "name": "framework",
+      "value": "behave"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    }
+  ]
+}

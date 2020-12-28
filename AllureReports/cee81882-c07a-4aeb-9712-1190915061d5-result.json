@@ -1,0 +1,65 @@
+{
+  "name": "Verify AddBook API Functionality -- @1.2 ",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Given The book details with Art of War, WEWEQ and author as Mao Zedong",
+      "status": "passed",
+      "start": 1608978882726,
+      "stop": 1608978882729
+    },
+    {
+      "name": "When We execute the AddBook API method",
+      "status": "passed",
+      "start": 1608978882729,
+      "stop": 1608978882847
+    },
+    {
+      "name": "Then Book is added successfully with Status Code as 200",
+      "status": "passed",
+      "start": 1608978882847,
+      "stop": 1608978882848
+    }
+  ],
+  "parameters": [
+    {
+      "name": "book_name",
+      "value": "Art of War"
+    },
+    {
+      "name": "isbn",
+      "value": "WEWEQ"
+    },
+    {
+      "name": "author",
+      "value": "Mao Zedong"
+    }
+  ],
+  "start": 1608978882724,
+  "stop": 1608978882972,
+  "uuid": "f7877710-2ebd-47ba-8dc4-ea07f8983f92",
+  "historyId": "75903e496d2b34a365845b9b7c4713da",
+  "fullName": "features/BookAPI.feature:Verify AddBook API Functionality",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "feature",
+      "value": "Verify that Books can be added and deleted using the Library API"
+    },
+    {
+      "name": "framework",
+      "value": "behave"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    }
+  ]
+}
